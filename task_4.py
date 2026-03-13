@@ -24,8 +24,5 @@ class EmployeeSalary:
         cls.hourly_payment = value
 
     def salary(self):
-        hours = self.get_hours()
-        if hours is None:
-            return None
-        return hours * self.hourly_payment
+        return self.hours * self.hourly_payment
 
